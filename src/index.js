@@ -10,7 +10,7 @@ const shift = (p) => {
 
 const compose = (...fns) => (...args) => fns.forEach(fn => fn(...args));
 
-const link = (p, file) => `module.exports = require('${path.relative(p,file).replace(/\\/g,'/')}')`
+const link = (p, file) => `module.exports = require('${shift(path.relative(p,file)).replace(/\\/g,'/')}')`
 
 glob(path.join(target, '/**/*.js'), (err, files) => {
     files.map(shift).forEach(compose(
