@@ -1,0 +1,19 @@
+{
+  "name": "de-src",
+  "version": "0.0.1",
+  "description": "Creates link to src directory in the root folder.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "moritz.roessler@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "command-line-args": "^5.1.1",
+    "command-line-usage": "^6.1.1",
+    "glob": "^7.1.6"
+  },
+  "bin": {
+    "de-src": "./bin/index.js"
+  }
+}
